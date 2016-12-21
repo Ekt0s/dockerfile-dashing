@@ -1,4 +1,6 @@
 # Dashing
+[![Build Status](https://img.shields.io/travis/Ekt0s/dockerfile-dashing/master.svg?style=flat-square)](https://travis-ci.org/Ekt0s/dockerfile-dashing)
+
 Run [Dashing](http://dashing.io/) in a [Docker](http://docker.io/) container.
 
 Link: [frvi/dashing](https://registry.hub.docker.com/u/frvi/dashing/)
