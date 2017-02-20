@@ -1,0 +1,16 @@
+sudo: required
+
+language: ruby
+
+services:
+  - docker
+  
+before_install:
+- docker build -t ekt0s/dashing:candidate .
+after_success:
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+    docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+    docker push USER/REPO;
+    fi
+notifications:
+  slack: sharmatools:5mPG2H1bvo4aKFXShoio63Ks
